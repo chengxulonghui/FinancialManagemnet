@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/statements_list_item_main_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_button_selector"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/statements_list_item_category_iv"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ico_exp_10" />
+
+            <TextView
+                android:id="@+id/statements_list_item_category_tv"
+                android:layout_width="36dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:gravity="center_horizontal"
+                android:text="晚餐"
+                android:textColor="@color/font_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <com.graduationproject.personnalfinancialmanagement.utils.layoututils.CustomBarView
+                android:id="@+id/statements_list_item_money_progress_cbv"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                custom:barBackground="@color/font_green"
+                custom:barMax="100"
+                custom:barProgress="38"
+                custom:barText="收:50.00"
+                custom:barTextColor="@color/white"
+                custom:barTextSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statements_list_item_percent_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="93.03%"
+            android:textColor="@color/font_green"
+            android:textSize="17sp" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/trans_gray" />
+</LinearLayout>

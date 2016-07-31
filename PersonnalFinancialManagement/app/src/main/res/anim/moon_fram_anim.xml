@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/moon_1_2"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_3_4"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_5_6"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_7_8"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_9_10"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_11_12"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_13_14"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_15_16"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_17_18"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_19_20"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_21_22"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_23_24"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_25_26"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_27_28"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/moon_29_30"
+        android:duration="400" />
+</animation-list>

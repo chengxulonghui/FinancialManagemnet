@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="PersonnalFinancialManagement"></dbname>
+
+    <version value="6"></version>
+
+    <list>
+        <mapping
+            class="com.graduationproject.personnalfinancialmanagement.config.javabean.MemoLitePal"></mapping>
+        <mapping
+            class="com.graduationproject.personnalfinancialmanagement.config.javabean.FinancialAlarm"></mapping>
+        <mapping
+            class="com.graduationproject.personnalfinancialmanagement.customerservice.trainTicket.javabean.TrainStation"></mapping>
+        <mapping
+            class="com.graduationproject.personnalfinancialmanagement.config.javabean.QuickRecordModel"></mapping>
+    </list>
+</litepal>

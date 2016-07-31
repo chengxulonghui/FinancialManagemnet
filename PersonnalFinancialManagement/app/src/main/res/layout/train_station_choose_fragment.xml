@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/train_station_choose_title_bar"
+        layout="@layout/accounting_title_bar" />
+
+    <include
+        android:id="@+id/train_station_choose_search_layout"
+        layout="@layout/train_station_search_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/trans_gray" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/train_station_choose_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">个人财务管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="daily_account">日常账本</string>
+</resources>

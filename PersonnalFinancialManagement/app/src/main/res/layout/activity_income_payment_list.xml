@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/income_payment_list_main_fl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/income_payment_list_title_bar"
+            layout="@layout/accounting_title_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_button_selector"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/income_payment_list_current_month_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="05"
+                        android:textColor="@color/gray_8f"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/income_payment_list_current_year_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016"
+                        android:textColor="@color/gray_cc"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <com.graduationproject.personnalfinancialmanagement.utils.layoututils.CustomBarView
+                        android:id="@+id/income_payment_list_income_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        custom:barBackground="@color/font_green"
+                        custom:barMax="100"
+                        custom:barProgress="38"
+                        custom:barText="收:50.00"
+                        custom:barTextColor="@color/white"
+                        custom:barTextSize="14sp" />
+                    />
+
+                    <com.graduationproject.personnalfinancialmanagement.utils.layoututils.CustomBarView
+                        android:id="@+id/income_payment_list_payment_progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        custom:barBackground="@color/title_red"
+                        custom:barMax="100"
+                        custom:barProgress="21"
+                        custom:barText="支:50.00"
+                        custom:barTextColor="@color/white"
+                        custom:barTextSize="14sp" />
+                    />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/income_payment_list_balance_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/income_payment_list_balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-50.00"
+                        android:textColor="@color/title_red"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结余"
+                        android:textColor="@color/font_gray"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/arrow_down" />
+            </TableRow>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/trans_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/income_payment_list_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:scrollbarStyle="outsideOverlay" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

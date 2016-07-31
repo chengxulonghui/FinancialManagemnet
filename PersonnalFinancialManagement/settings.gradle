@@ -1,0 +1,1 @@
+include ':app', ':litepal', ':MPChartLib', ':PagerSlidingTabStripLibrary', ':android-volley-master', ':sharesdk', ':onekeysharesdk'

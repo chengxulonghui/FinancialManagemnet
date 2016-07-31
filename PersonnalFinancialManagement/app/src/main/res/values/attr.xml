@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="customBar">
+        <attr name="barBackground" format="color|integer" />
+        <attr name="barMax" format="float" />
+        <attr name="barProgress" format="float" />
+        <attr name="barText" format="string" />
+        <attr name="barTextColor" format="color|integer" />
+        <attr name="barTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
